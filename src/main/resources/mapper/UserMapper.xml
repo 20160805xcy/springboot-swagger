@@ -11,7 +11,7 @@
     <result column="user_address" jdbcType="VARCHAR" property="userAddress" />
   </resultMap>
 
-  <select id="findOneById" parameterType="integer" resultType="com.xcy.springbootswagger.model.User">
+  <select id="findOneById" parameterType="integer" resultType="User">
     select * from user where id = #{id}
   </select>
     
