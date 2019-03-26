@@ -1,7 +1,10 @@
 package com.xcy.springbootswagger.service;
 
 import com.xcy.springbootswagger.model.User;
+import net.sf.jasperreports.engine.JRException;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
 /**
@@ -21,4 +24,6 @@ public interface UserService {
     void deleteOneById(Integer id);
 
     void updateById(Integer id);
+
+    String exportPDF(Integer id, HttpServletRequest request, HttpServletResponse response) throws Exception;
 }
