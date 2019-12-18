@@ -111,6 +111,22 @@
         <!-- jasperReports End -->
 
 
+        <!-- aop 依赖 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
+
+        <!--此部分JDK1.8是包含的，默认包含GSON和阿里的fastJSON，可不用-->
+        <!-- 用于日志切面中，以 json 格式打印出入参 -->
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.8.5</version>
+        </dependency>
+
+
+
 
     </dependencies>
 
